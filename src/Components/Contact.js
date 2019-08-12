@@ -10,8 +10,9 @@ class Contact extends Component {
       var state = this.props.data.address.state;
       var zip = this.props.data.address.zip;
       var phone= this.props.data.phone;
-      //var email = this.props.data.email;
+      var email = this.props.data.email;
       var message = this.props.data.contactmessage;
+      var warning = this.props.data.warningmessage;
     }
 
     return (
@@ -28,6 +29,7 @@ class Contact extends Component {
             <div className="ten columns">
 
                   <p className="lead">{message}</p>
+                  <p className="lead warning">{warning}</p>
 
             </div>
 
@@ -83,11 +85,12 @@ class Contact extends Component {
 						   {name}<br />
 						   {street} <br />
 						   {city}, {state} {zip}<br />
-						   <span>{phone}</span>
+						   <span>{phone}</span><br/>
+               {email}
 					   </p>
 				   </div>
 
-               <div className="widget widget_tweets">
+               {/* <div className="widget widget_tweets">
                   <h4 className="widget-title">Latest Tweets</h4>
                   <ul id="twitter">
                      <li>
@@ -107,7 +110,7 @@ class Contact extends Component {
                         <b><a href="#">3 Days Ago</a></b>
                      </li>
                   </ul>
-		         </div>
+		         </div> */}
             </aside>
       </div>
    </section>
