@@ -1,4 +1,4 @@
 [build]
-base = "react-resume-template/"
-publish = "react-resume-template/build/"
-command = "npm run build"
+  command = "npm run build"
+  publish = "react-resume-template/build"
+  base = "react-resume-template"
