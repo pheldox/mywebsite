@@ -1,4 +1,4 @@
 [build]
 base = "REACT-RESUME-TEMPLATE/"
-publish = "myapp/build/"
+publish = "REACT-RESUME-TEMPLATE/build/"
 command = "npm run build"
